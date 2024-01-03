@@ -24,7 +24,7 @@ export const Title = styled.h1`
   }
 `;
 
-export const Text = styled.h1`
+export const Text = styled.p`
   color: #fff;
   font-size: 22px;
   font-weight: 400;

@@ -61,7 +61,7 @@ const Navbar = () => {
             </li>
           </NavbarItems>
           <div>
-            <Button>+373 68 159 759</Button>
+            <Button href="tel:+37368159759">+373 68 159 759</Button>
             <Select defaultValue={'uz'} onChange={onChangeLang}>
               {LANGUAGES.map(({ code, label }) => (
                 <option key={code} value={code}>
@@ -78,8 +78,8 @@ const Navbar = () => {
             )}
           </Hamburger>
           {openMenu && (
-            <SmallMenu onClick={OpenMenuClick}>
-              <SmallNavbarItems>
+            <SmallMenu>
+              <SmallNavbarItems onClick={OpenMenuClick}>
                 <li>
                   <NavbarLink to="/">{t('home')}</NavbarLink>
                 </li>

@@ -5,7 +5,7 @@ export const Nav = styled.nav`
   max-height: 80px;
 `;
 
-export const NavWrapper = styled.nav`
+export const NavWrapper = styled.div`
   position: relative;
   padding: 26px 0px;
   display: flex;
@@ -58,7 +58,7 @@ export const Hamburger = styled.div`
 `;
 
 export const Select = styled.select`
-  padding: 8px 14px 8px 0;
+  padding: 8px 6px;
   border-radius: 3px;
   border: 2px solid #ffcc29;
   margin-left: 10px;
@@ -112,7 +112,7 @@ export const SmallButton = styled.a`
 `;
 
 export const SmallSelect = styled.select`
-  padding: 8px 14px 8px 0;
+  padding: 8px 6px;
   border-radius: 3px;
   border: 2px solid #ffcc29;
   margin-top: 30px;
