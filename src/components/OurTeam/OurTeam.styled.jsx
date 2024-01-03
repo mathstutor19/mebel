@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 export const Section = styled.section`
   padding: 30px 0px 66px;
+  @media (max-width: 768px) {
+    padding: 30px 0px 30px;
+  }
 `;
 
 export const Wrapper = styled.div`

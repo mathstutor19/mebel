@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Container from '../../components/Container/Container';
 import Heading from '../../components/Heading/Heading';
 import OrderCard from '../../components/OrderCard/OrderCard';
@@ -13,10 +14,11 @@ const Order = () => {
   function minusClick(cost) {
     setSum((prev) => prev - cost);
   }
+  const { t } = useTranslation();
   return (
     <Section>
       <Container>
-        <Heading>Заказ</Heading>
+        <Heading>{t('order')}</Heading>
         <CardWrapper>
           {OrderCardData.map((item) => (
             <OrderCard

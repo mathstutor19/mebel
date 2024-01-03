@@ -1,6 +1,5 @@
 import React from 'react';
 import Container from '../../components/Container/Container';
-import Title from '../../components/Heading/Heading';
 import {
   Button,
   Form,
@@ -13,13 +12,16 @@ import {
   Section,
 } from './Contact.styled';
 import images from '../../assets/images/contact.png';
+import { useTranslation } from 'react-i18next';
+import Heading from '../../components/Heading/Heading';
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <Section>
       <Container>
         <Wrapper>
           <Left>
-            <Title>Контакты</Title>
+            <Heading>{t('contact')}</Heading>
             <Form>
               <Input type="text" placeholder="Ваше имя" />
               <Input type="text" placeholder="+7(_ _ _) _ _ _-_ _ - _ _ " />

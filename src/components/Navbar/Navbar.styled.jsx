@@ -21,7 +21,7 @@ export const NavbarItems = styled.ul`
   display: flex;
   gap: 68px;
   @media (max-width: 1280px) {
-    gap: 50px;
+    gap: 30px;
   }
   @media (max-width: 992px) {
     display: none;
@@ -57,6 +57,25 @@ export const Hamburger = styled.div`
   }
 `;
 
+export const Select = styled.select`
+  padding: 8px 14px 8px 0;
+  border-radius: 3px;
+  border: 2px solid #ffcc29;
+  margin-left: 10px;
+  &:focus {
+    border: 2px solid #ffcc29;
+  }
+  &:hover {
+    border: 2px solid #ffcc29;
+  }
+  &:active {
+    border: 2px solid #ffcc29;
+  }
+  @media (max-width: 992px) {
+    display: none;
+  }
+`;
+
 export const SmallMenu = styled.div`
   position: absolute;
   left: 30px;
@@ -80,7 +99,7 @@ export const SmallMenu = styled.div`
 export const SmallNavbarItems = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 `;
 export const SmallButton = styled.a`
   border-radius: 40px;
@@ -90,4 +109,20 @@ export const SmallButton = styled.a`
   font-size: 18px;
   display: inline-block;
   margin-top: 20px;
+`;
+
+export const SmallSelect = styled.select`
+  padding: 8px 14px 8px 0;
+  border-radius: 3px;
+  border: 2px solid #ffcc29;
+  margin-top: 30px;
+  &:focus {
+    border: 2px solid #ffcc29;
+  }
+  &:hover {
+    border: 2px solid #ffcc29;
+  }
+  &:active {
+    border: 2px solid #ffcc29;
+  }
 `;

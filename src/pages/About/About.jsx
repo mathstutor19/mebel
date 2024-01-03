@@ -1,15 +1,17 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Contact from '../../assets/images/contact.png';
 import Container from '../../components/Container/Container';
 import Heading from '../../components/Heading/Heading';
 import { Left, Right, Text, Wrapper, Image, Section } from './About.styled';
 const About = () => {
+  const { t } = useTranslation();
   return (
     <Section>
       <Container>
         <Wrapper>
           <Left>
-            <Heading>О нас</Heading>
+            <Heading>{t('about')}</Heading>
             <Text>
               Большое спасибо. Каждая мелочь и тому подобное, чтобы
               действительно критиковать нужды архитектора тела, мне жаль, что он
